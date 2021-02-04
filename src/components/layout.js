@@ -54,6 +54,9 @@ const Layout = props => {
       />
 
       <Helmet>
+        <title>{siteName}</title>
+        <meta name="description" content={description} />
+        <link rel={rel} href={href} sizes={sizes} type={type} />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -65,9 +68,6 @@ const Layout = props => {
           href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
           rel="stylesheet"
         />
-        <link rel={rel} href={href} sizes={sizes} type={type} />
-        <meta name="description" content={description} />
-        <title>{siteName}</title>
       </Helmet>
 
       <Header />
