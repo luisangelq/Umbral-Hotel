@@ -1,11 +1,27 @@
-import React from "react";
-import Layout from "../components/layout";
+import React from "react"
+import Layout from "../components/layout"
+import ImageHotel from "../components/image"
+import HomeContent from "../components/homeContent" 
+import RoomPreview from "../components/roomPreview"
 
-const IndexPage = () => (
-  <Layout>
-    <h1>Umbral Hotel</h1> 
-  </Layout>
-  
-)
+const IndexPage = () => {
 
-export default IndexPage;
+  return (
+    <Layout>
+      <ImageHotel />
+      <HomeContent />
+      <RoomPreview />
+
+      {/* <ul>
+        {rooms.map(room => (
+          <RoomPreview 
+            key={room.id}
+            room={room}
+          />
+        ))}
+      </ul> */}
+    </Layout>
+  )
+}
+
+export default IndexPage
