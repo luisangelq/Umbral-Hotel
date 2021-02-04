@@ -19,7 +19,7 @@ const NavLink = styled(Link)`
   line-height: 1rem;
   padding: 1rem;
   margin-right: 2rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   transition: 0.3s ease-in-out;
 
   &:hover {

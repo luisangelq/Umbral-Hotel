@@ -16,14 +16,11 @@ const UsText = styled.main`
     column-gap: 3rem;
     justify-items: center;
   }
-  
-    p {
+
+  p {
     line-height: 2;
     text-align: justify;
-    
   }
-  
-  
 `
 
 const AboutUsContent = () => {
@@ -61,7 +58,13 @@ const AboutUsContent = () => {
           <p>{content}</p>
         </div>
 
-        <Img fluid={image.fluid}  css={css` width: 70%; margin-bottom: 10rem`}/>
+        <Img
+          fluid={image.fluid}
+          css={css`
+            width: 70%;
+            margin-bottom: 10rem;
+          `}
+        />
       </UsText>
     </Fragment>
   )

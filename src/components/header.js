@@ -31,10 +31,10 @@ const Header = () => {
             text-decoration: none;
             font-size: 4rem;
             font-weight: bold;
-            transition: .3s ease-in-out;
+            transition: 0.3s ease-in-out;
 
-            &:hover{
-                color: #de9c00;
+            &:hover {
+              color: #de9c00;
             }
           `}
         >

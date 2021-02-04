@@ -7,12 +7,19 @@ import Footer from "./footer"
 import useSeo from "../hooks/useSeo"
 
 const Layout = props => {
+  const seo = useSeo()
 
-  const seo = useSeo();
-  
-  const { siteName, fallbackSeo: {title, description}} = seo.datoCmsSite.globalSeo;
-  const {rel, href, type, sizes} = seo.datoCmsSite.faviconMetaTags.tags[16].attributes;
-  
+  const {
+    siteName,
+    fallbackSeo: { title, description },
+  } = seo.datoCmsSite.globalSeo
+  const {
+    rel,
+    href,
+    type,
+    sizes,
+  } = seo.datoCmsSite.faviconMetaTags.tags[16].attributes
+
   return (
     <Fragment>
       <Global
@@ -65,9 +72,7 @@ const Layout = props => {
 
       <Header />
       {props.children}
-      <Footer 
-        title={title}
-      />
+      <Footer title={title} />
     </Fragment>
   )
 }

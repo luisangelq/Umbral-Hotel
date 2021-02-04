@@ -2,9 +2,8 @@ import React from "react"
 import { css } from "@emotion/react"
 import { Link } from "gatsby"
 
-const Footer = ({title}) => {
-
-    const year = new Date().getFullYear();
+const Footer = ({ title }) => {
+  const year = new Date().getFullYear()
   return (
     <footer
       css={css`
@@ -25,11 +24,13 @@ const Footer = ({title}) => {
           }
         `}
       >
-        <p 
-            css={css`
-                color: #de9c00;
-            `}
-        >{title}.  -  All Rights Reserved {year} &copy; </p>
+        <p
+          css={css`
+            color: #de9c00;
+          `}
+        >
+          {title}. - All Rights Reserved {year} &copy;{" "}
+        </p>
 
         <Link
           to={"/"}

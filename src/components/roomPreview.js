@@ -18,9 +18,9 @@ const RoomsList = styled.ul`
   }
 
   h3 {
-      font-size: 3rem;
-      text-align: center;
-      margin-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5rem;
   }
 `
 
@@ -52,14 +52,12 @@ const RoomPreview = () => {
       </h2>
 
       <RoomsList>
-          
-        {rooms.map(({ title, id, image, content, slug}) => (
-            
+        {rooms.map(({ title, id, image, content, slug }) => (
           <div
             key={id}
             css={css`
               display: grid;
-              grid-template-rows: 1fr 1fr ;
+              grid-template-rows: 1fr 1fr;
               border: 1px solid #e1e1e1;
               margin-bottom: 2rem;
             `}

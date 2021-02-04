@@ -28,19 +28,21 @@ const RoomTemplate = ({
   const { title, content, image } = nodes[0]
   return (
     <Layout>
-      <main 
+      <main
         css={css`
-            margin: 5rem auto;
-            max-width: 1200px;
-            width: 95%;
-        `} 
+          margin: 5rem auto;
+          max-width: 1200px;
+          width: 95%;
+        `}
       >
         <h1
-            css={css`
-                text-align: center;
-                margin-top: 4rem;
-            `}
-        >{title}</h1>
+          css={css`
+            text-align: center;
+            margin-top: 4rem;
+          `}
+        >
+          {title}
+        </h1>
         <p>{content}</p>
         <Img fluid={image.fluid} />
       </main>
